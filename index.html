@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website Landing Page With Full Screen Draggable Image Slider - Html, Css & Javascript</title>
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <!-- our css -->
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/headmembers.css">
+  <link rel="stylesheet" href="css/choose.css">
+  <link rel="stylesheet" href="css/testimonial.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="nav-bar">
+      <a href="" class="logo">Logo</a>
+      <div class="navigation">
+        <div class="nav-items">
+          <i class="uil uil-times nav-close-btn"></i>
+          <a href="#" style="color: #ff5400;"><i class="uil uil-home"></i> Home</a>
+          <a href="#"><i class="uil uil-compass"></i> Explore</a>
+          <a href="#"><i class="uil uil-info-circle"></i> About</a>
+          <a href="#"><i class="uil uil-document-layout-left"></i> Blog</a>
+          <a href="#"><i class="uil uil-envelope"></i> Contact</a>
+        </div>
+      </div>
+      <i class="uil uil-apps nav-menu-btn"></i>
+    </div>
+  </header>
+
+  <section class="home">
+    <div class="media-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <div class="swiper bg-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/bg1.jpg" alt="">
+          <div class="text-content">
+            <h2 class="title">Autumn <span>Season</span></h2>
+            <p>Autumn, also known as fall in North American English, is one of the four temperate
+              seasons. Outside the tropics, autumn marks the transition from summer to winter,
+              in September or March. Autumn is the season when the duration of daylight becomes
+              noticeably shorter and the temperature cools considerably.</p>
+            <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="swiper-slide dark-layer">
+          <img src="images/bg2.jpg" alt="">
+          <div class="text-content">
+            <h2 class="title">Winter <span>Season</span></h2>
+            <p>Winter is the coldest season of the year in polar and temperate zones. It occurs
+              between autumn and spring.The tilt of Earth's axis causes seasons; winter occurs
+              when a hemisphere is oriented away from the Sun. Different cultures define different
+              dates as the start of winter, and some use a definition based on weather.</p>
+            <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="swiper-slide dark-layer">
+          <img src="images/bg3.jpg" alt="">
+          <div class="text-content">
+            <h2 class="title">Summer <span>Season</span></h2>
+            <p>Summer is the hottest of the four temperate seasons, occurring after spring and
+              before autumn. At or aroundthe summer solstice, the earliest sunrise and latest
+              sunset occurs, daylight hours are longest and dark hours are shortest, with day
+              length decreasing as the season progresses after the solstice.</p>
+            <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="images/bg4.jpg" alt="">
+          <div class="text-content">
+            <h2 class="title">Spring <span>Season</span></h2>
+            <p>Spring, also known as springtime, is one of the four temperate seasons, succeeding
+              winter and preceding summer. There are various technical definitions of spring, but
+              local usage of the term varies according to local climate, cultures and customs. When
+              it is spring in the Northern Hemisphere, it is autumn in the Southern Hemisphere and
+              vice versa.</p>
+            <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-slider-thumbs">
+      <div class="swiper-wrapper thumbs-container">
+        <img src="images/bg1.jpg" class="swiper-slide" alt="">
+        <img src="images/bg2.jpg" class="swiper-slide" alt="">
+        <img src="images/bg3.jpg" class="swiper-slide" alt="">
+        <img src="images/bg4.jpg" class="swiper-slide" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- mission section -->
+  <section id="mission-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Our Mission and Vision</h2>
+          <p>To work as a catalyst in bringing sustainable change with all possible resources, in the lives of people
+            who are often allowed to languish in neglect and social deprivation.
+            To rise above our differences and come together, to make a difference in the lives of those who need our
+            help the most.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="./images/logo.png" alt="Logo">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- choose us section -->
+  <h2 class="choose-head">Why choose us?</h2>
+  <section id="choose-us">
+    <div class='testimonial'>
+      <div class='testimonials'></div>
+      <div class='navigation'></div>
+      <div class='arrow-left'>
+        <i class='fa fa-chevron-left'></i>
+      </div>
+      <div class='arrow-right'>
+        <i class='fa fa-chevron-right'></i>
+      </div>
+    </div>
+  </section>
+
+  <section id="ongoing-programs" class="about section container-fluid">
+    <div class="container-fluid">
+      <h2>Our Ongoing Social Programs</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <!-- quote symbol -->
+            <svg viewBox="0 0 512 512" width="80" title="quote-left" class="quote-icon">
+              <path
+                d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z" />
+            </svg>
+            <p class="quote">Two things are infinite: the universe and human stupidity; and I'm not sure about the
+              universe.</p>
+            <p class="author">— Albert Einstein</p>
+            <hr>
+          </blockquote>
+        </div>
+        <div class="col-md-8">
+          <img src="https://source.unsplash.com/ufFIweqSPd4/800x800" id="main">
+          <div id="thumbnails">
+            <img src="https://source.unsplash.com/ufFIweqSPd4/800x800">
+            <img src="https://source.unsplash.com/O0uCm1WLnA0/800x800">
+            <img src="https://source.unsplash.com/pV5ckb2HEVk/800x800">
+            <img src="https://source.unsplash.com/j9QEFAQqaXc/800x800">
+            <img src="https://source.unsplash.com/EXkbaeN05lY/800x800">
+            <img src="https://source.unsplash.com/B2mq60Ksrsg/800x800">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- aim section -->
+  <section id="aim-section">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <h2>Our Aim</h2>
+          <p>To work as a catalyst in bringing sustainable change with all possible resources, in the lives of people
+            who are often allowed to languish in neglect and social deprivation.
+            To rise above our differences and come together, to make a difference in the lives of those who need our
+            help the most.</p>
+        </div>
+        <div class="col-sm-6">
+          <h2>Ground Values</h2>
+          <p>To work as a catalyst in bringing sustainable change with all possible resources, in the lives of people
+            who are often allowed to languish in neglect and social deprivation.
+            To rise above our differences and come together, to make a difference in the lives of those who need our
+            help the most.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- card section -->
+  <section id="card-section">
+    <div class="container text-white">
+      <div class="row justify-content-center text-center">
+        <div class="col-md-3 col-sm-6">
+          <div class="icons">
+            <i class="fas fa-city"></i>
+          </div>
+          <div class="head">
+            <span id="count1"></span>+ Cities
+          </div>
+          <p>With a discovery of the humanity within, aashray is a well built team of 400+ coordinators rising above
+            their differences to come together and join hand in hand to make a difference in the lives of those who need
+            our help the most.</p>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="icons">
+            <i class="far fa-clock"></i>
+          </div>
+          <div class="head">
+            <span id="count2"></span>+ Social Programs
+          </div>
+          <p>Through its 30+ social projects aashray has been able to bring a sigh of relief and smile on thousands of
+            faces. It has been the ray of hope in the lives of people with special needs and has given them a helping
+            hand to bring them forward to see the sunshine.</p>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="icons">
+            <i class="fas fa-user-alt"></i>
+          </div>
+          <div class="head">
+            <span id="count3"></span>+ Co-ordinators
+          </div>
+          <p>With a discovery of the humanity within, aashray is a well built team of 400+ coordinators rising above
+            their differences to come together and join hand in hand to make a difference in the lives of those who need
+            our help the most.</p>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="icons">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="head">
+            <span id="count4"></span>+ Participants
+          </div>
+          <p>With a prominent mission and an accomplished vision, Aashray has influenced more than thousand lives and
+            has revived them through their miseries. Aashray always stood rooted at the times of adversity thus aiding
+            the indigent.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- testimonial section -->
+  <section id="testimonial-area">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-8 offset-md-2">
+          <div class="section-heading text-center">
+            <h2>A Word From Our Customers</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="testi-wrap">
+
+        <div class="client-single active position-1" data-position="position-1">
+          <div class="client-img">
+            <img
+              src="https://pbs.twimg.com/media/EZm0hBTXgAAOyFe.jpg"
+              alt="">
+          </div>
+          <div class="client-comment">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. </h3>
+            <span><i class="fa fa-quote-left"></i></span>
+          </div>
+        </div>
+
+        <div class="client-single inactive position-2 img-scale" data-position="position-2">
+          <div class="client-img">
+            <img
+              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+              alt="">
+          </div>
+          <div class="client-comment">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. </h3>
+            <span><i class="fa fa-quote-left"></i></span>
+          </div>
+        </div>
+
+        <div class="client-single inactive position-3 img-scale" data-position="position-3">
+          <div class="client-img">
+            <img
+              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+              alt="">
+          </div>
+          <div class="client-comment">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. </h3>
+            <span><i class="fa fa-quote-left"></i></span>
+          </div>
+        </div>
+
+        <div class="client-single inactive position-4" data-position="position-4">
+          <div class="client-img">
+            <img
+              src="https://pbs.twimg.com/media/EZm0hBTXgAAOyFe.jpg"
+              alt="">
+          </div>
+          <div class="client-comment">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. </h3>
+            <span><i class="fa fa-quote-left"></i></span>
+          </div>
+        </div>
+
+        <div class="client-single inactive position-5" data-position="position-5">
+          <div class="client-img">
+            <img
+              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+              alt="">
+          </div>
+          <div class="client-comment">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. </h3>
+            <span><i class="fa fa-quote-left"></i></span>
+          </div>
+        </div>
+
+        <div class="client-single inactive position-6" data-position="position-6">
+          <div class="client-img">
+            <img
+              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+              alt="">
+          </div>
+          <div class="client-comment">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. </h3>
+            <span><i class="fa fa-quote-left"></i></span>
+          </div>
+        </div>
+
+        <div class="client-single inactive position-7" data-position="position-7">
+          <div class="client-img">
+            <img
+              src="https://cdn.dribbble.com/users/2132253/avatars/small/1799e2c9badff08058551384763e284c.jpg?1568268299"
+              width="40px" alt="">
+          </div>
+          <div class="client-comment">
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. </h3>
+            <span><i class="fa fa-quote-left"></i></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- head-member section -->
+  <section id="head-member" class="about section">
+    <div class="container-fluid">
+      <h2>Our Head Members</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <blockquote class="blockquote">
+            <!-- quote symbol -->
+            <svg viewBox="0 0 512 512" width="80" title="quote-left" class="quote-icon">
+              <path
+                d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z" />
+            </svg>
+            <p class="quote">A leader is one who knows the way, goes the way, and shows the way.</p>
+            <p class="author">— John C. Maxwell</p>
+            <hr>
+          </blockquote>
+        </div>
+        <div class="col-md-8">
+          <img src="images/aniket.jpg" id="main2">
+          <div id="thumbnails2">
+            <img src="images/aniket.jpg">
+            <img src="images/sujeet.jpeg">
+            <img src="images/rishabh.jpg">
+            <img src="images/vikas.jpg">
+            <img src="images/sparsh.jpeg">
+            <img src="images/manik.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- contact section -->
+  <section id="contact-page-sec">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-map-marked"></i>
+              </div>
+              <div class="contact-info-text">
+                <h2>address</h2>
+                <span>1215 Lorem Ipsum, Ch 176080 </span>
+                <span>Chandigarh , INDIA</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-info-text">
+                <h2>E-mail</h2>
+                <span>info@LoremIpsum.com</span>
+                <span>yourmail@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-info-text">
+                <h2>office time</h2>
+                <span>Mon - Thu 9:00 am - 4.00 pm</span>
+                <span>Thu - Mon 10.00 pm - 5.00 pm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="contact-page-form">
+            <h2>Get in Touch</h2>
+            <form>
+              <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="single-input-field">
+                    <input type="text" placeholder="Your Name" name="name" />
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="single-input-field">
+                    <input type="email" placeholder="E-mail" name="email" required />
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="single-input-field">
+                    <input type="text" placeholder="Phone Number" name="phone" />
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="single-input-field">
+                    <input type="text" placeholder="Subject" name="subject" />
+                  </div>
+                </div>
+                <div class="col-md-12 message-input">
+                  <div class="single-input-field">
+                    <textarea placeholder="Write Your Message" name="message"></textarea>
+                  </div>
+                </div>
+                <div class="single-input-fieldsbtn">
+                  <input type="submit" value="Send Now" />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="contact-page-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12975.40084811455!2d75.70122462819403!3d31.25320502278106!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xeb80974d102f2870!2sBlock%2013%20Division%20Of%20Student%20Welfare!5e0!3m2!1sen!2sin!4v1660297100008!5m2!1sen!2sin"
+              width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/swiper-bundle.min.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
